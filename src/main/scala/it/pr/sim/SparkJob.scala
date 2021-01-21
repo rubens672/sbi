@@ -9,17 +9,7 @@ import org.apache.spark.SparkFiles
 import org.apache.log4j.{Level, Logger}
 import it.pr.sim.exception.Exception._
 import it.pr.sim.helper.DfReaderHelper
-/*
- * repoPath = hdfs://cloudera001.binarioetico.it:8020/user/pr/spark
- * thriftUrl = thrift://cloudera001.binarioetico.it:9083
- * propPAth = /Resources/confs/properties.conf
- * defaultFS = cloudera001.binarioetico.it
- * rmAddress = cloudera001.binarioetico.it
- * 
- * hdfs://cloudera001.binarioetico.it:8020/user/pr/spark thrift://cloudera001.binarioetico.it:9083 /Resources/confs/properties.conf cloudera001.binarioetico.it cloudera001.binarioetico.it
- * 
- * hdfs://cloudera001.binarioetico.it:8020/user/pr/spark/Resources/confs/properties.conf
- */
+
 abstract class SparkJob(appName:String, loggerName:String) extends App{
   
     Logger.getLogger("org").setLevel(Level.ERROR)
